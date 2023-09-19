@@ -18,7 +18,7 @@ def sample_breakpoints(mapDF_c,sex,options):
     if sex == 'male':
         genetic_positions=mapDF_c['male_cM'].tolist()
     elif sex == 'female':
-        genetic_positions=mapDF_c['male_cM'].tolist()
+        genetic_positions=mapDF_c['female_cM'].tolist() # ZYX: I think here would be 'female_cM'?
     else:
         sys.exit('invalid sex specification')   
 
